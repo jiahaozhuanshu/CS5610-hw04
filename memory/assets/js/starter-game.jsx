@@ -1,6 +1,7 @@
 // Attributions: 
 // https://codepen.io/gaearon/pen/oWWQNa?editors=0010
 // https://zh-hans.reactjs.org/tutorial/tutorial.html
+// https://www.w3schools.com/jsref/jsref_map.asp
 import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'lodash';
