@@ -16,7 +16,7 @@ function Square(props) {
     return <button type="button" className="hidden" onClick={() => props.onClick()}>wut</button>
   }
   else if(props.finished == "true") {
-    return <button type="button" disabled> {props.lett} </button>
+    return <button type="button" className="disabled" disabled> {props.lett} </button>
   }
 
   else {
@@ -97,12 +97,12 @@ class Starter extends React.Component {
         </div>
 
 
-	<div className="restartButton">
-	    <button onClick={this.restart.bind(this)}> reset </button>
+	<div>
+	    <button className="reset" onClick={this.restart.bind(this)}> reset </button>
         </div>
 
-	<div className="reminder">
-	    <p> You have clicked: {numClicks} times </p>
+	<div>
+	    <p className="reminder"> You have clicked: {numClicks} times </p>
 	</div>
 
 
