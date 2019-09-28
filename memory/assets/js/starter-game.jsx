@@ -28,6 +28,8 @@ function Square(props) {
 }
 
 
+
+// initialize the states
 class Starter extends React.Component {
   constructor(props) {
     super(props);
@@ -42,6 +44,8 @@ class Starter extends React.Component {
       
   }
 
+
+// pressing reset to return to the original state	
   restart() {
     let letter_lst = _.shuffle(["A","A","B","B","C","C","D","D","E","E","F","F","G","G","H","H"]);
     this.setState({
