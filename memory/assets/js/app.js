@@ -19,8 +19,17 @@ import $ from "jquery";
 
 import game_init from "./starter-game";
 
-$(() => {
-  let root = $('#root')[0];
-  game_init(root);
-});
+import socket from "./socket";
+
+
+function start() {
+  let root = document.getElementById('root');
+  if (root) {
+    let channel = socket.channel("games:" + window.gameName, {});
+    // We want to join in the react component.
+    game_init(root, channel);
+  }
+}
+
+$(start);
 
